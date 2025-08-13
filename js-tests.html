@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tests - JavaScript Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #f0f0f0;
+            padding: 1rem;
+        }
+        h2 {
+            color: #ff6f61;
+            margin-top: 2rem;
+        }
+        pre {
+            background: #1e1e1e;
+            padding: 1rem;
+            border-radius: 0.3rem;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Journey - Tests</h1>
+    <p>All small JS experiments in one place for practice and learning.</p>
+
+    <!-- === Test 1: Even or Odd === -->
+    <h2>Test 1: Even or Odd</h2>
+    <pre>
+    let x = 19;
+    
+    if (x % 2 === 0) {
+        console.log(`${x} is even`);
+    } else {
+    console.log(`${x} is odd`);
+    }
+    </pre>
+
+    <!-- === Test 2: Weather Check === -->
+    <h2>Test 2: Weather Check</h2>
+    <pre>
+    let temp = 25;
+    
+    if (temp > 20 && temp < 30) {
+    console.log("Nice weather");
+    }
+    </pre>
+
+    <!-- === Test 3: Optional Chaining === -->
+    <h2>Test 3: Optional Chaining</h2>
+    <pre>
+    let user = { name: "Jalal" };
+    console.log(user?.name ?? "Guest");
+    </pre>
+
+    <!-- === Test 4: Ternary Operator === -->
+    <h2>Test 4: Ternary Operator</h2>
+    <pre>
+    let age = 20;
+    let accessAllowed = age > 19 ? "adult" : "underage";
+    console.log(accessAllowed);
+    </pre>
+
+    <script>
+        // === Test 1: Even or Odd ===
+        let x = 19;
+        if (x % 2 === 0) {
+            console.log(`${x} is even`);
+        } else {
+            console.log(`${x} is odd`);
+        }
+
+        // === Test 2: Weather Check ===
+        let temp = 25;
+        if (temp > 20 && temp < 30) {
+            console.log("Nice weather");
+        }
+
+        // === Test 3: Optional Chaining ===
+        let user = { name: "Jalal" };
+        console.log(user?.name ?? "Guest");
+
+        // === Test 4: Ternary Operator ===
+        let age = 20;
+        let accessAllowed = age > 19 ? "adult" : "underage";
+        console.log(accessAllowed);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Quiz Game</h1>
+    <p>Welcome to the quiz game! Answer the questions to earn points.</p>
+
+    <script>
+        let userName = prompt("Enter your name:");
+
+        let score = 0;
+
+        let answer1 = prompt("What is the capital of japan?\n(a) Tokyo\n(b) Seoul\n(c) Beijing");
+        if (answer1.toLowerCase() === 'a' || answer1.toLowerCase() === 'tokyo') {
+            score += 5;
+        }
+
+        let answer2 = prompt("Which color do you get by mixing red and blue?\n(a) Green\n(b) Purple\n(c) Orange");
+        if (answer2.toLowerCase() === 'b' || answer2.toLowerCase() === 'purple') {
+            score += 5;
+        }
+
+        let answer3 = prompt("What is the largest planet in our solar system?\n(a) Earth\n(b) Jupiter\n(c) Mars");
+        if (answer3.toLowerCase() === 'b' || answer3.toLowerCase() === 'jupiter') {
+            score += 5;
+        } 
+
+        let feedback = "";
+        if (score === 15) {
+            feedback = "Excellent! You're a genius, " + userName + " 🎉";
+        } else if (score >= 10) {
+            feedback = "Very good! You can improve more, " + userName;
+        } else if (score >= 5) {
+            feedback = "Good try! Keep practicing, " + userName;
+        } else {
+            feedback = "Looks like you need to study more, " + userName + " 😅";
+        }
+
+        alert("You scored " + score + " out of 3.\n" + feedback);
+    </script>
+    
+</body>
+
+</html>

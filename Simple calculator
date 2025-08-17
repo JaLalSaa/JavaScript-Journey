@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple-Calculator</title>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    
+    <script>
+        let Operation = prompt("Choose an operayion:\n +, -, ×, /");
+        let x = parseFloat(prompt("First Number"));
+        let y = parseFloat(prompt("Second number"));
+        let result;
+        
+        if (Operation === "+") {
+            result = x + y;
+        }
+        if (Operation === "-") {
+            result = x - y;
+        }
+        if (Operation === "×") {
+            result = x * y;
+        }
+        if (Operation === "/") {
+            result = x / y;
+            if (y === 0) {
+                result = "E";
+            } 
+        }
+        else {
+            result = "Invalid operation!";
+        }
+        alert("Result: " + result);
+    </script>
+</body>
+
+</html>

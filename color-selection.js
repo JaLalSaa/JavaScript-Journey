@@ -22,3 +22,20 @@ if (color >= 1 && color <= colorPallet.length) {
 } else {
     console.log("Not available"); // Number is out of range
 }
+
+// -------------------------------
+// 3 - Using switch…case
+// -------------------------------
+switch (color) {
+    case 1:
+        console.log(colorPallet[0]); // If color is 1, print 'red'
+        break;
+    case 2:
+        console.log(colorPallet[1]); // If color is 2, print 'green'
+        break;
+    case 3:
+        console.log(colorPallet[2]); // If color is 3, print 'blue'
+        break;
+    default:
+        console.log("Not available"); // Any other number
+}

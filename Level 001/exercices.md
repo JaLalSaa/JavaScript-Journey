@@ -1,4 +1,4 @@
-## 📝 Exercises:
+## Level 001
 
 ### 1. **Operators & Operations**
 

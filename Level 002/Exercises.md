@@ -1,4 +1,4 @@
-## 🏋️‍♂️ Level 002
+## 🔰 Level 002
 
 ### 1. **Grades System**
 

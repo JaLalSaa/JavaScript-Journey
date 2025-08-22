@@ -1,4 +1,4 @@
-## Level 001
+## 🔰 Level 001
 
 ### 1. **Operators & Operations**
 

@@ -1,7 +1,6 @@
 /*/////////////////////////////
 /// 1. Grades System //////
-*////////////////////////
-
+*/ ///////////////////////
 let grades = [95, 82, 67, 45, 33, 100, 77];
 let aGrade = 0;
 let fGrade = 0;
@@ -27,8 +26,7 @@ console.log(`${fGrade} students got F`);
 
 /*///////////////////////////////
 /// 2. Max & Min Finder //////
-*/////////////////////////
-
+*/ ////////////////////////
 let nums = [4, 10, 2, 99, 23, 5];
 let max = nums[0];
 let min = nums[0];
@@ -47,8 +45,7 @@ console.log("Minimum number is:", min);
 
 /*/////////////////////////////
 /// 3. Reverse Array //////// 
-*/////////////////////////
-
+*/ ////////////////////////
 let letters = ["a", "b", "c", "d", "e"];
 
 for (let i = letters.length - 1; i >= 0; i--) {
@@ -57,13 +54,33 @@ for (let i = letters.length - 1; i >= 0; i--) {
 
 /*////////////////////////////////////
 /// 4. Multiplication Tables ////// 
-*///////////////////////////////
+*/ //////////////////////////////
+
 for (let number = 1; number <= 5; number++) {
     console.log(`Multiplication Table for ${number}:`);
 
     for (let i = 1; i <= 5; i++) {
         console.log(`${number} x ${i} = ${number * i}`);
 
-        console.log('');
+        console.log("");
     }
+}
+
+/*////////////////////////////////////
+/// 5. Search in Array ////////////
+*/ //////////////////////////////
+let movies = ["Se7en", "Keep out", "Interstellar", "Inception"];
+let search = prompt("what are you looking for?");
+let found = false;
+
+for (let i = 0; i < movies.length; i++) {
+    if (search.toLowerCase() === movies[i].toLowerCase) {
+        found = true;
+        break;
+    }
+}
+if (found) {
+    alert("Found it!");
+} else {
+    alert("Not found!");
 }

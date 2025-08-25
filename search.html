@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        body {
+            background: linear-gradient(to top left, rgb(255, 251, 30), rgb(248, 248, 232));
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>IMDB search</h1>
+    <p>Looking for something?!</p>
+
+    <script>
+        let movies = ['Se7en', 'Keep out', 'Interstellar', 'Inception'];
+        let search = prompt("what are you looking for?");
+        let found = false;
+
+        for (let i = 0; i < movies.length; i++) {
+            if (search.toLowerCase() === movies[i].toLowerCase) {
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            alert("Found it!");
+        } else {
+            alert("Not found!") 
+        }
+
+    </script>
+</body>
+</html>

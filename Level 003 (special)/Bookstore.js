@@ -55,7 +55,7 @@ console.log(books);
 // Function 4: Show book information by ID or Title
 // ==============================
 function bookInfo(value) {
-    let found = false;
+    let found = false; 
 
     for (let i = 0; i < books.length; i++) {
         if (books[i][0] === value || books[i][1] === value) {
@@ -66,16 +66,17 @@ function bookInfo(value) {
             console.log(`Quantity: ${books[i][4]}`); 
             found = true;
             break;
-        } 
-        else if (!found) {
-            console.log("Book not found");
         }
+    }   
+
+    if (!found) {
+        console.log("Book not found");
     }
 }
 
 // Example usage of bookInfo
-bookInfo(1); // search by ID
-bookInfo("Clean Code"); // search by Title
+bookInfo(3); // search by ID
+
 
 // ==============================
 // Function 5: Search for a book by criteria (id, title, author)

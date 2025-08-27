@@ -1,56 +1,60 @@
-# Bookstore Project  
+# 📚 Bookstore Project  
 
-### Add, Edit, Delete, and Display Books  
+Create a program that does the following:  
+
+---
+
+### ➕ Add, ✏️ Edit, 🗑️ Delete, and 👀 Display Books  
 The program should be able to store a new book with the following information:  
 
-1. Book ID  
-2. Book Title  
-3. Author  
-4. Price  
-5. Quantity  
+1. 🔢 Book ID  
+2. 📖 Book Title  
+3. ✍️ Author  
+4. 💲 Price  
+5. 📦 Quantity  
 
-**Help (1):** To store book information, you can use arrays—specifically, 2D arrays.  
+💡 **Help (1):** To store book information, you can use **arrays**, specifically **2D arrays**.  
 
 ---
 
-### Ability to Search for a Book  
+### 🔍 Ability to Search for a Book  
 The program should allow searching for a book by:  
 
-1. Book ID  
-2. Title  
-3. Author  
+1. 🔢 Book ID  
+2. 📖 Book Title  
+3. ✍️ Author  
 
-**Help (2):** For searching, you can use loops to traverse the entire array, then check using conditional statements such as `if`.  
+💡 **Help (2):** For searching, you can use **loops** to traverse the entire array, then check using **if conditions**.  
 
 ---
 
-### Sell a Book and Generate an Invoice  
-The program should be able to process the sale of one or more books and issue an invoice, with attention to:  
+### 🛒 Sell a Book & 🧾 Export an Invoice  
+The program should allow selling one or more books and generating an invoice, with attention to:  
 
-1. Verifying that there is enough stock of the book to be sold.  
-2. If sufficient quantity exists, decrease the inventory according to the quantity requested on the invoice.  
+1. ✅ Verifying that there is enough stock of the book to be sold.  
+2. 📉 If enough stock exists, reduce the inventory according to the requested quantity.  
 
-**Help (3):** To issue an invoice, you need inputs and then validation.  
-*Note: The inputs are values provided in the program; it is not required to request them from the user at runtime.*  
+💡 **Help (3):** To issue an invoice, you need **inputs** and then perform validation.  
+> 📝 *Note: Inputs are pre-defined in the program; you don’t have to request them from the user during execution.*  
 
 **Inputs:**  
-- Book Title: the title of the book to purchase.  
-- Requested Quantity.  
-- Available Balance: the buyer’s current balance.  
+1. 📖 Book Title: the title of the book to purchase.  
+2. 🔢 Requested Quantity.  
+3. 💳 Available Balance: the buyer’s current balance.  
 
-**Validation conditions:**  
-1. The book must be available.  
-2. The requested quantity must be in stock.  
-3. The customer’s balance must be sufficient to purchase the requested quantity.  
+**Validation Conditions:**  
+1. 📦 The book must be available.  
+2. 🔢 The requested quantity must be in stock.  
+3. 💰 The customer’s balance must be sufficient to purchase the requested quantity.  
 
 ---
 
-### Example Table of Books  
+### 📊 Example Book Table  
 
-| Quantity | Price | Author               | Book Title          | ID |
-|---------:|------:|----------------------|---------------------|---:|
-| 13       | 80.0  | Simon Sinek          | Start with Why      | 1  |
-| 22       | 59.9  | J. Clark Scott       | But How Do It Know  | 2  |
-| 5        | 50.0  | Robert Cecil Martin  | Clean Code          | 3  |
-| 12       | 45.0  | Peter Thiel          | Zero to One         | 4  |
-| 9        | 39.9  | Kyle Simpson         | You Don’t Know JS   | 5  |
+| 📦 Quantity | 💲 Price | ✍️ Author             | 📖 Book Title        | 🆔 ID |
+|------------:|---------:|-----------------------|----------------------|------:|
+| 13          | 80.0     | Simon Sinek           | Start with Why       | 1     |
+| 22          | 59.9     | J. Clark Scott        | But How Do It Know   | 2     |
+| 5           | 50.0     | Robert Cecil Martin   | Clean Code           | 3     |
+| 12          | 45.0     | Peter Thiel           | Zero to One          | 4     |
+| 9           | 39.9     | Kyle Simpson          | You Don’t Know JS    | 5     |

@@ -57,9 +57,8 @@ function deleteBook(value) {
 deleteBook(6); // delete book by ID
 console.log(books);
 
-
 // ==============================
-// Function 5: Show book information by ID or Title
+// Function 4: Show book information by ID or Title
 // ==============================
 function bookInfo(value) {
     let found = false; 
@@ -83,8 +82,7 @@ function bookInfo(value) {
 }
 
 // Example usage of bookInfo
-bookInfo(1); // search by ID.
-
+bookInfo(1); // search by ID
 
 // ==============================
 // Function 5: Search for a book by criteria (id, title, author)
@@ -112,7 +110,72 @@ function bookSearch(criteria, value) {
 // Example usage
 bookSearch("title", "You don't know JS");
 
-
 // ==============================
 // Function 6: Sell a book and export an invoice
 // ==============================
+function buyAbook(title, quantity, balance) {
+    for (let i = 0; i < books.length; i++) {
+        if (title === books[i][1]) {
+            let price = books[i][3];
+            let availableQty = books[i][4];
+            let totalCost = price * quantity;
+
+            if (quantity > availableQty) {
+                console.log(`❌ Sorry, only ${availableQty} copies of "${title}" are available.`);
+                return;
+            }
+
+            if (balance < totalCost) {
+                console.log(`❌ Insufficient balance. You need $${totalCost}, but you only have $${balance}.`);
+                return;
+            }
+
+            books[i][4] -= quantity;
+            balance -= totalCost;
+
+            console.log(`✅ You bought ${quantity} copy/copies of "${title}" for $${totalCost}.`);
+            console.log(`💰 Remaining balance: $${balance}`);
+            console.log(`📚 Remaining stock of "${title}": ${books[i][4]}`);
+            return;
+        }
+    }
+    console.log(`❌ Book titled "${title}" was not found in the library.`);
+}
+
+// Example purchase
+buyAbook("Clean code", 1, 90);
+
+/* ==============================
+    How to use this Library Program:
+==============================
+
+1️⃣ Add a book:
+   - Call addBook(id, title, author, price, quantity)
+   - Example: addBook(7, "New Book", "Author Name", 30.5, 10);
+
+2️⃣ Edit a book:
+   - Call editBook(id, title, author, price, quantity)
+   - Example: editBook(3, "Updated Title", "Updated Author", 40, 8);
+
+3️⃣ Delete a book:
+   - Call deleteBook(id or title)
+   - Example: deleteBook(2) or deleteBook("Clean code");
+
+4️⃣ Show book info:
+   - Call bookInfo(id or title)
+   - Example: bookInfo(1) or bookInfo("Zero to one");
+
+5️⃣ Search a book:
+   - Call bookSearch(criteria, value)
+   - criteria: "id", "title", or "author"
+   - Example: bookSearch("title", "You don't know JS");
+
+6️⃣ Buy a book:
+   - Call buyAbook(title, quantity, balance)
+   - Example: buyAbook("Clean code", 2, 100);
+
+✅ Notes:
+   - All book data is stored in the 'books' array.
+   - Each book is stored as [id, title, author, price, quantity].
+   - Functions handle printing messages for success or errors.
+*/

@@ -44,7 +44,7 @@ This repo is not for big projects — it’s purely for random tests, small idea
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/JavaScript-Journey.git
+   git clone https://github.com/JaLalSaa/JavaScript-Journey.git
    ```
 
 2. **Open any HTML file** in a browser to run the experiment.
